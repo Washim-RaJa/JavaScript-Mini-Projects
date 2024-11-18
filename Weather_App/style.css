@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 40px 35px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    border-radius: 30px;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    border-start-end-radius: 30px;
+    border-end-end-radius: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.search button img{
+    width: 25px;
+}
+.overview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.weather-icon{
+    width: 100px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+.weather p{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    font-size: 14px;
+    margin-top: 15px;
+    display: none;
+    text-transform: capitalize;
+    color: rgb(255, 58, 58);
+    font-weight: bold;
+}
+@media (width < 460px) {
+    .card{
+        padding: 40px 15px;
+        width: 95%;
+        max-width: 400px;
+    }
+    .search input{
+        padding: 10px 0;
+        text-align: center;
+    }
+    .search button{
+        width: 45px;
+    }
+    .search button img{
+        width: 20px;
+    }
+    .details{
+        padding: 0 5px;
+    }
+    .col img{
+        width: 30px;
+        margin-right: 10px;
+    }
+}
+@media (width < 400px) {
+    .details{
+        padding: 0;
+    }
+}

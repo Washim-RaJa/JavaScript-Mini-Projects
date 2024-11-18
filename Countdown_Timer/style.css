@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & div{
+        border-radius: 10px;
+    }
+}
+.container{
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    row-gap: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px black;
+}
+h1{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.input-container{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+
+    & div{
+        flex: 1;
+    }
+    & p{
+        color: #fff;
+        text-align: center;
+        margin-bottom: 5px;
+
+    }
+    & input{
+        color: #fff;
+
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        box-shadow: 0 0 10px black;
+        border-radius: 5px;
+
+
+    }
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    transition: background 3s;
+    
+    & button{
+        color: #fff;
+        border: none;
+        flex: 1;
+        padding: 10px 0;
+        background-color: transparent;
+        box-shadow: 0 0 10px black;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        
+        &:hover{
+            
+            background: linear-gradient(to right, #8360c3, #2ebf91);
+        }
+
+    }
+}
+.result-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.days,
+.hours,
+.minutes,
+.seconds{
+    width: 150px;
+    box-shadow: 0 0 10px black;
+
+    & p{
+        color: #fff;
+        text-align: center;
+        padding: 7px 0;
+        font-weight: bold;
+    }
+    & div{
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        color: #fff;
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (width < 768px) {
+    .input-container{
+        flex-direction: column;
+    }
+    .btn-container{
+        flex-direction: column;
+    }
+    .result-container{
+        flex-wrap: wrap;
+    }
+}
+@media (width < 425px) {
+    h1{
+        font-size: 30px;
+    }
+    .result-container{
+        gap: 15px;
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds{
+        width: 100px;
+    }
+}

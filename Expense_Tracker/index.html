@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1 title="Your Financial Advisor">Expenses Tracker</h1>
+        <div class="input-section">
+            <div class="income">
+                <input id="income-source-input" type="input" list="income-source" placeholder="Enter income source">
+                <datalist id="income-source">
+                    <option value="Salary">Salary</option>
+                    <option value="Business">Business</option>
+                    <option value="Online earnings">Online earnings</option>
+                    <option value="Share market/Stock market">Share market/Stock market</option>
+                </datalist>
+                <input type="number" id="income-amount" placeholder="Enter income amount">
+                <input type="date" id="income-date">
+                <button class="add-income-btn" onclick="incomeCalculator()">Add Income</button>
+            </div>
+
+            <div class="expense">
+                <input id="expense-category-input" type="input" list="expense-category" placeholder="Enter expense category">
+                <datalist id="expense-category">
+                    <option value="Rent">Rent</option>
+                    <option value="Food & Beverage">Food & Beverage</option>
+                    <option value="Taxes">Taxes</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Entertainment">Entertainment</option>
+                </datalist>
+                <input type="number" id="expense-amount" placeholder="Enter expense amount">
+                <input type="date" id="expense-date">
+                <button class="add-expense-btn" onclick="expenseCalculator()">Add Expense</button>
+            </div>
+
+            <button class="result-btn" onclick="result()">Calculate</button>
+        </div>
+        <section>
+            <div class="income-container">
+                <table class="income-table">
+                    <thead>
+                        <tr>
+                            <th colspan="4" style="background: transparent; font-size: 1rem;">
+                                Income details
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Income Source</th>
+                            <th>Income Amount</th>
+                            <th>Date</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="income-table-body">
+    
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="expense-container">
+                <table class="expense-table">
+                    <thead>
+                        <tr>
+                            <th colspan="4" style="background: transparent; font-size: 1rem;">
+                                Expense details
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-table-body">
+    
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="result-container">
+                <table class="result-table">
+                    <thead>
+                        <tr>
+                            <th colspan="4" style="background: transparent; font-size: 1rem;">
+                                Results
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Total Income</th>
+                            <th>Total Expense</th>
+                            <th>Net Income</th>
+                        </tr>
+                    </thead>
+                    <tbody id="result-table-body">
+    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
