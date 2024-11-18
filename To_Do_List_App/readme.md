@@ -16,7 +16,7 @@ This is a basic and fully responsive ToDo List project developed using HTML, CSS
     - Marked as done
     - Deleted
 
-- The currnet `Date` and `time` is shown at the top.
+- The current `Date` and `time` is shown at the top.
 
-- The data also persist because it is saved to the `Local Storage`.
+- The data also persists because it is saved to the `Local Storage`.
 
