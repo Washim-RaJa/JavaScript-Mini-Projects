@@ -1,0 +1,35 @@
+
+[
+    {
+        "image": "./assets/absol.png",
+        "name": "absol"
+    },
+    {
+        "image": "./assets/charizard.webp",
+        "name": "charizard"
+    },
+    {
+        "image": "./assets/charmander.png",
+        "name": "charmander"
+    },
+    {
+        "image": "./assets/flareon.png",
+        "name": "flareon"
+    },
+    {
+        "image": "./assets/goku.webp",
+        "name": "goku"
+    },
+    {
+        "image": "./assets/naruto.webp",
+        "name": "naruto"
+    },
+    {
+        "image": "./assets/pikachu.png",
+        "name": "pikachu"
+    },
+    {
+        "image": "./assets/squirtle.webp",
+        "name": "squirtle"
+    }
+]

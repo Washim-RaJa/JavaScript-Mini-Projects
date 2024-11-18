@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryCard Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Click cards to flip</h1>
+    <div class="container">
+        <div class="movesAndScore">
+            <p>
+                Moves:
+                <span class="moves">0</span>
+            </p>
+            <p>
+                Matched Count:
+                <span class="matchedCount">0</span>
+            </p>
+        </div>
+        <div class="grid-container">
+        </div>
+        <div class="durationAndBtn">
+            <p>
+                Score:
+                <span class="score">0</span>/10
+            </p>
+            <p>
+                Time Taken: 
+                <span class="duration">00:00:00</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="restartGame()">Restart Game</button>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
