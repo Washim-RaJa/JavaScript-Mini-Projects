@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <button class="start-btn">Start Quiz</button>
+            <header class="header hide">
+                <h1>Quiz App</h1>
+                <div>
+                    <div id="question-number"></div>
+                    <div id="score">Score : 0</div>
+                </div>
+            </header>
+            <div class="quiz-contents hide">
+                <h2 id="preview-question" class="">This is dummy question ?</h2>
+                <button id="option-1" class="option-btn" value="a" onclick="checkAnswer(this)">3</button>
+                <button id="option-2" class="option-btn" value="b" onclick="checkAnswer(this)">4</button>
+                <button id="option-3" class="option-btn" value="c" onclick="checkAnswer(this)">5</button>
+                <button id="option-4" class="option-btn" value="d" onclick="checkAnswer(this)">6</button>
+                <button id="btn" disabled>Next</button>
+            </div>
+            <div class="result-container hide"></div>
+            <button class="restart-btn hide">Play again</button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
